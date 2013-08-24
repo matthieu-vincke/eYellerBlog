@@ -8,8 +8,8 @@ gith({
 	//console.log("Payload = " + JSON.stringify(payload));
 
 	// Execute a git fetch on the bare repo.
-	var gitRepoPath = "/home/mattv/eYellerBlog.git";
-	var gitCommand = "git --git-dir " + gitRepoPath + " fetch origin master:master";
+	var gitRepoPath = "/home/mattv/eYellerBlog";
+	var gitCommand = "sh -c 'cd "+ gitRepoPath +"  && git pull'";
 
 	var sys = require('sys')
 	var exec = require('child_process').exec;
