@@ -7,10 +7,9 @@ body {
   line-height: 1.4em;
   font-family: 'Lucida Grande', sans-serif;
   color: #333;
-  background-image: url("groovepaper.png");
 }
 a {
-  color: #0054a6;
+  color: #443266;
   text-decoration: none;
 }
 hr {
@@ -60,12 +59,10 @@ dl a:hover {
   top: 0;
   width: 100%;
   height: 50px;
-  background-color: #0054a6;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0054a6), color-stop(1, #004385));
-  background-image: -webkit-linear-gradient(top, #0054a6 0%, #004385 100%);
-  background-image: -moz-linear-gradient(top, #0054a6 0%, #004385 100%);
-  background-image: -o-linear-gradient(top, #0054a6 0%, #004385 100%);
-  background-image: -ms-linear-gradient(top, #0054a6 0%, #004385 100%);
+  background-color: #443266;
+  background-image: -moz-linear-gradient(top, #3C2A5F, #443266);
+  background-image: -webkit-linear-gradient(top, #3C2A5F, #443266);
+  background-image: -o-linear-gradient(top, #3C2A5F, #443266);
   border-bottom: 1px solid #003264;
   -webkit-box-shadow: 0px 10px 10px rgba(0,0,0,0.10), inset 0px -1px 0px rgba(255,255,255,0.20);
   -moz-box-shadow: 0px 10px 10px rgba(0,0,0,0.10), inset 0px -1px 0px rgba(255,255,255,0.20);
@@ -74,17 +71,16 @@ dl a:hover {
 }
 #header .logo {
   position: absolute;
-  top: -35px;
-  left: 18px;
+  top: 2px;
+  left: 10px;
 }
 #header .tagline {
-  float: left;
+  float: right;
   display: inline;
   color: #fff;
-  margin-left: 240px;
   font-size: 12px;
   font-weight: normal;
-  line-height: 10px;
+  line-height: 15px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
@@ -199,11 +195,11 @@ dl a:hover {
   margin-left: 20px;
   padding: 5px 10px;
   margin-bottom: 20px;
-  background-color: #0054a6;
+  background-color: #443266;
   -webkit-box-shadow: inset 0px 0px 10px rgba(255,255,255,0.20), inset 0px 1px 0px rgba(255,255,255,0.10);
   -moz-box-shadow: inset 0px 0px 10px rgba(255,255,255,0.20), inset 0px 1px 0px rgba(255,255,255,0.10);
   box-shadow: inset 0px 0px 10px rgba(255,255,255,0.20), inset 0px 1px 0px rgba(255,255,255,0.10);
-  border: 1px solid #0054a6;
+  border: 1px solid #443266;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -211,7 +207,7 @@ dl a:hover {
   text-shadow: 0px -1px 0px rgba(0,0,0,0.20);
 }
 .article .more:hover {
-  background-color: #004c95;
+  background-color: #3C2A5F;
 }
 .article .view-thread {
   float: left;

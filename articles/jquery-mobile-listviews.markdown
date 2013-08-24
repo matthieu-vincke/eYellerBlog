@@ -1,11 +1,8 @@
 Title: Format jquery mobile listviews
 Author: Matthieu Vincke
 Date: Sat Aug 24 2013 09:23:00 GMT+0100
-Categories: jquery mobile,listviews,css,javascript
+Categories: jquerymobile,listviews,css,javascript
 
-![Development mode](http://www.gravatar.com/avatar/aa9d29ca4e5f7d3889e715f56bcf6c7d.png)
-
-##Introduction
 
 This first article will show how to format the jquery mobile listviews to make them do more (a lot more!)
 
@@ -17,11 +14,23 @@ This first article will show how to format the jquery mobile listviews to make t
 - **Test Code**
 
 - **Test Code**
-	
-	// Test code
-	bal blabl
-	
+
+Blabla
+
+	Test code
+	Test
+
 - **Test Code**
-	
-	// Test code
-	bal blabl
+
+Blabla
+
+	Test
+
+Yipiiiiiiiiiii
+
+	Test
+
+
+
+----------
+8/24/2013 10:54:38 AM 

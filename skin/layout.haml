@@ -2,8 +2,8 @@
 %html(lang="en")
   %head
     %meta(charset="utf-8")
-    %title #{(title ? title + " - " : "")}How To Node - NodeJS
-    %meta(name="description" content="Learn the zen of coding in NodeJS.")
+    %title #{(title ? title + " - " : "")}eYeller - Blog
+    %meta(name="description" content="Blog of the eYeller team")
     %meta(name="viewport" content="width=device-width")
     %link(href="/style.css" rel="stylesheet")
     %link(href="/print.css" rel="stylesheet" media="print")
@@ -13,21 +13,14 @@
     #container
       #header
         %a{href: "/"}
+          %img.logo{src: "/logo.png", alt: "eYellerBlog"}          
           .tagline
-            Wheat powered blog.
+            Javascript / Jquery mobile / Phonegap / Cordova and more!
       = content
       
       #footer
-        %p &copy; 2013 eCommit Consulting Service BVBA
-        %p Content and articles are copyrighted to the individual authors. Design by&nbsp;
+        %p &copy; 2013 eYeller
+        %p Content and articles are copyrighted to the individual authors. Design inspired of design done by&nbsp;
           %a{href: "http://bengourley.co.uk"} Ben Gourley
           . All code snippets used in the examples are in the public domain.
         %p Wheat running on node #{process.version}
-    :script
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-40190662-1', 'davydewaele.be');
-      ga('send', 'pageview');
-

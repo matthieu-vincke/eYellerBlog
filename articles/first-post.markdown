@@ -3,8 +3,6 @@ Author: Matthieu Vincke
 Date: Sat Aug 24 2013 09:23:00 GMT+0100
 Categories: node,blog,wheat,eYeller
 
-##Introduction
-
 This blog has been created thanks to the <a href="https://github.com/creationix/wheat/" target="_blank">Wheat engine</a> created by [Tim Caswell](https://twitter.com/creationix).
 
 And also thanks to the instructions given in the article:
