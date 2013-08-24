@@ -2,13 +2,13 @@
 var gith = require('gith').create( 7000 );
 
 gith({
-  repo: 'ddewaele/node-wheat-blog-template'
+  repo: 'matthieu-vincke/eYellerBlog'
 }).on( 'all', function( payload ) {
 	console.log( 'Post-receive form Github');
 	//console.log("Payload = " + JSON.stringify(payload));
 
 	// Execute a git fetch on the bare repo.
-	var gitRepoPath = "/home/ubuntu/node/node-wheat-blog-template.git";
+	var gitRepoPath = "/home/mattv/eYellerBlog.git";
 	var gitCommand = "git --git-dir " + gitRepoPath + " fetch origin master:master";
 
 	var sys = require('sys')
