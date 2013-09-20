@@ -25,7 +25,7 @@
             query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&amp;';
           }
         }
-        document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ecommitconsultingblog/get_num_replies.js' + query + '"></' + 'script>');
+        document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/eyellerblog/get_num_replies.js' + query + '"></' + 'script>');
       })();
 
 
@@ -61,7 +61,7 @@
   .aside
     %h4
       About this Article
-    %a.twitter-share-button{href:"http://twitter.com/share",data-count:"horizontal",data-via:"creationix"}
+    %a.twitter-share-button{href:"http://twitter.com/share",data-count:"horizontal",data-via:"matthieuvincke"}
       Tweet
     %script{src:"http://platform.twitter.com/widgets.js"}
     :if article.date
