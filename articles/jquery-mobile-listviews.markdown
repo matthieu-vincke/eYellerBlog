@@ -1,6 +1,6 @@
 Title: Format jquery mobile listviews
 Author: Matthieu Vincke
-Date: 9/21/2013 2:30:47 PM
+Date: 9/21/2013 2:30:47 PM 
 Categories: jquerymobile,listviews,css,javascript
 
 
