@@ -1,6 +1,6 @@
 Title: eYeller Blog powered Git blog using Wheat
 Author: Matthieu Vincke
-Date: 9/21/2013 2:29:51 PM 
+Date: 9/21/2013 2:29:51 PM
 Categories: node,blog,eYeller
 
 This blog has been created thanks to the <a href="https://github.com/creationix/wheat/" target="_blank">Wheat engine</a> created by [Tim Caswell](https://twitter.com/creationix).
