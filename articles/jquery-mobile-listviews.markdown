@@ -8,6 +8,9 @@ Categories: jquerymobile,css,javascript
 
 This first article will show how to customize the jquery mobile listviews to make them do more!
 
+Before  starting, let me just clarify what I mean by customizing jQuery mobile. For me, customizing  means  modifying the CSS classes and but also the javascript code. Adding a CSS class to enhance the design of some jQuery mobile items is not a customization for me.
+
+
 *For the little story*:
 
 In eYeller, we wanted to represent all the messages around the user on a single page and to be able to display the responses by a click on the message. We also needed a contextual menu to choose to answer to the yell / reyell / get the details => we needed a button inside the header.
@@ -156,24 +159,134 @@ You get it, it is really simple! Just add "data-filter="true"" in the listview, 
 The result is: [Responses to Towelie and Bender messages with search feature](jquery-mobile-listviews/secondLevelWithSearch.html "Towelie and Bender messages and responses with search")
 
 
+**Add an header**
+
+Adding a header is really easy. Just add a "data-role="header"" in a div on top of the "data-role="content"" and that's it!
+
+Then, you can add some blocks to organize the header in 2 or 3 parts.
+
+By example:
+
+    <div data-role="header" data-position="fixed" data-tap-toggle="false"> 
+	    <div class="ui-grid-b">
+		    <div class="ui-block-a">
+		    	Left part		    
+		    </div>
+		    <div class="ui-block-b">
+		    	Middle part
+		    </div>
+		    <div class="ui-block-c">
+		    	Right part					
+		    </div>   
+	    </div>
+    </div>   
+
+The option "data-tap-toggle" is something you want to remember if you want to avoid some strange behaviour with the forms making the whole page "sliding"... I let you have a look on jQuery mobile to discover this option.
+
+Let's see the result: [SecondLevel with Search and Header](jquery-mobile-listviews/secondLevelSearchHeader.html "Header and search")
 
 
 **Why we need to customize**
 
+Actually, you don't need to if the current result is enough for you... But, we wanted for eYeller to:
 
+- Remove the annoying '+' icon
+- Put the search bar in the header
+- Add a text zone for the date and the number of replies
+- Add a button for a contextual menu
+
+If you do want the same, you need also to customize jQuery mobile. 
 
 ##Customize it!
 
-**Remove the icon**
+**Remove or move the icon**
+
+Removing the icon is quite simple. You just need to create a class "*noicon*" and to make it override "*.ui-collapsible-heading*" and  "*.ui-icon*" and you add this class to the collapsible.
+
+    .noicon .ui-collapsible-heading .ui-icon {		
+	    display:none;
+    }
+
+And:
+
+    <div id='ListItem'  data-role="collapsible" class="noicon">		
+
+The result is: [Without the icon](jquery-mobile-listviews/CustomizeStep1a.html "Customize step1a")
+
+
+But, if you prefer to move the icon to right and to change it, let say to make appear a button to open later a contextual menu, you would do:
+
+    .noicon .ui-collapsible-heading .ui-icon {		
+	    background: url('css/images/menu.png') 50% 50% no-repeat!important; 
+	    background-size: 18px 18px!important;  
+	    left: auto !important;
+	    right: 20px !important;	
+	    top:38px;
+    }  
+
+The result: [With a new icon](jquery-mobile-listviews/CustomizeStep1a.html "Customize step1a")
+
+The complete code is:
+
+<jquery-mobile-listviews/CustomizeStep1b.html>
 
 
 **Move the search bar**
+
+The search bar is a nice feature but it takes some space in the main content area. That's why we thought it would be nice to move it into the header.
+
+What we can see also in most mobile app is a button to display or hide the search bar. Let's do that also!
+
+To understand how it works, you have to know that the search bar is simply a "form". So, we can do the trick by overriding the "form" class for our "contentDiv".
+
+But first, we need to modify the header bar as the search bar doesn't fit by default in it.
+
+To do so, we need to modify the CSS class "ui-header".
+
+    .ui-header{
+	    background-image: -moz-linear-gradient(top, #3E0470, #111111);
+	    background-image: -webkit-linear-gradient(top, #3E0470, #111111);
+	    background-image: -o-linear-gradient(top, #3E0470, #111111);  
+	    height:50px;
+    }
+
+This modification will just add a nice background and set the height to 50px that is the size of the search bar.
+
+Now, second step. As just explained before, we need to modify the "form" class for the "contentDiv" part.
+
+Here is what we can do:
+
+    
+    #contentDiv form {
+	    background-image: -moz-linear-gradient(top, #3E0470, #111111);
+	    background-image: -webkit-linear-gradient(top, #3E0470, #111111);
+	    background-image: -o-linear-gradient(top, #3E0470, #111111);
+	    
+	    position : fixed;
+	    top  : 17px;
+	    left : 100px;
+	    width: 50%;
+	    height: 45px;
+	    z-index  : 1001; 
+    }​
+
+You see the idea? With position fixed, we allow the bar to move and with top/left we set the position. "z-index" is to make sure that the bar is always on top. And finally, the background-image is just for fun! To put some nice background in order to not be differentiate from the header.
+
+See the result here:
+
+[Move the search bar in the header](jquery-mobile-listviews/CustomizeStep2.html "Move the search bar in the header")
+
+And the complete code:
+
+<jquery-mobile-listviews/CustomizeStep2.html>
 
 
 **Add a text zone for the date**
 
 
 **Add a button in yell and replies**
+
+We already have the image from the first step of customization. All we need is to make the button "alive".
 
 
 **Some adjustments**

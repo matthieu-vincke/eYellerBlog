@@ -1,0 +1,118 @@
+<html>
+	<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>eYeller blog - jQuery listviews</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.js"></script>
+  <style type="text/css">
+    .avatar {
+    float: left;
+    margin-top: 1px;
+    margin-left: -10px;
+    margin-right: 5px;	
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+  }
+  
+  .listViewHeaderText {
+    white-space:normal;
+    line-height:120%;
+    width:75%;
+  }
+  
+  .avatarreply {
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;	
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+  }   
+
+  .noicon .ui-collapsible-heading .ui-icon {		
+    background: url('css/images/menu.png') 50% 50% no-repeat!important; 
+    background-size: 18px 18px!important;  
+    left: auto !important;
+    right: 20px !important;	
+    top:38px;
+  }  
+  </style>  
+  </head> 
+  <body>
+  <div data-role="header" data-position="fixed" data-tap-toggle="false"> 
+      <div class="ui-grid-b">
+        <div class="ui-block-a">
+          Left part      
+        </div>
+        <div class="ui-block-b">
+          Middle part
+        </div>
+        <div class="ui-block-c">
+          Right part					
+        </div>   
+      </div>
+  </div>   
+  <div  data-role="content" class="jqm-content"  id="contentDiv">
+    <ul data-role="listview" data-filter="true">
+      <li>
+          <div id='ListItem'  data-role="collapsible" class="noicon">		
+            <h3> 
+              <p class="avatar"><img src="img/towelieavatar.png"/></p>
+              <p class="listViewHeaderText"><strong>Towelie</strong></p>
+              <p class="listViewHeaderText">Don't forget to bring a towel.</p>          
+            </h3>
+            <div>
+              <ul>
+                <li>                    
+                    <h2>
+                      <p class="avatarreply"><img src="img/cartmanavatar.png"></p>
+                      <p class="listViewHeaderText"><strong>Cartman</strong></p>
+                      <p class="listViewHeaderText">You're the worst character ever, Towelie</p>
+                    </h2>                    
+                </li>
+                <li>
+                    <h2>
+                      <p class="avatarreply"><img src="img/towelieavatar.png"></p>
+                      <p class="listViewHeaderText"><strong>Towelie</strong></p>
+                      <p class="listViewHeaderText">I know...</p>
+                    </h2>                      
+                </li>
+              </ul>
+            </div>
+          </div>
+      </li>
+      <li>
+          <div id='ListItem' data-role="collapsible" class="noicon">		
+            <h3> 
+              <p class="avatar"><img src="img/benderavatar.png"/></p>
+              <p class="listViewHeaderText"><strong>Bender</strong></p>
+              <p class="listViewHeaderText">The chemical energy keeps my fuel charged.</p>          
+            </h3>
+            <div>
+              <ul>
+                <li>
+                    <h2>
+                      <p class="avatarreply"><img src="img/fryavatar.png"></p>
+                      <p class="listViewHeaderText"><strong>Fry</strong></p>
+                      <p class="listViewHeaderText">Then what are the cigars for?</p>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+                      <p class="avatarreply"><img src="img/benderavatar.png"></p>
+                      <p class="listViewHeaderText"><strong>Bender</strong></p>
+                      <p class="listViewHeaderText">They make me look cool.</p>
+                    </h2>
+                </li>
+              </ul>
+            </div>         
+          </div>        
+      </li>
+    </ul>
+  </div>
+  </body>
+</html>
