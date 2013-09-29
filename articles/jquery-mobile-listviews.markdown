@@ -394,9 +394,9 @@ The complete code is:
 *Soon*
 
 After some adjustment, you can have something like::
-> [Final result](jquery-mobile-listviews/finalResult.html "Final result")
+> [Final result](jquery-mobile-listviews/finalResult.htm "Final result")
 
 
 The complete code is:
 
-<jquery-mobile-listviews/finalResult.html>
+<jquery-mobile-listviews/finalResult.htm>
