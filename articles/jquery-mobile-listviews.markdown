@@ -265,10 +265,10 @@ And:
 The result is: **[Without the icon](jquery-mobile-listviews/CustomizeStep1a.html "Customize step1a")**
 
 
-But, if you prefer to move the icon to right and to change it, let say to make appear a button to open later a contextual menu, you would do:
+But, if you prefer to move the icon to right and to change it you can something like that:
 
     .noicon .ui-collapsible-heading .ui-icon {		
-	    background: url('css/images/menu.png') 50% 50% no-repeat!important; 
+	    background: url('img/menu.png') 50% 50% no-repeat!important; 
 	    background-size: 18px 18px!important;  
 	    left: auto !important;
 	    right: 20px !important;	
@@ -390,4 +390,13 @@ The complete code is:
 
 **Some adjustments**
 
+
 *Soon*
+
+After some adjustment, you can have something like::
+> [Final result](jquery-mobile-listviews/finalResult.html "Final result")
+
+
+The complete code is:
+
+<jquery-mobile-listviews/finalResult.html>
