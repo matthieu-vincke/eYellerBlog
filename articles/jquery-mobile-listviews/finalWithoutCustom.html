@@ -31,17 +31,42 @@
     height: 48px;
     border-radius: 5px;
   }   
+  
+  .asideheader{
+    width: 100px;
+    height: 15px;
+    border: solid 1px #CCCCCC;
+    border-radius: 1em 1em 1em 1em;
+    margin-left:-25px;
+    margin-bottom:-5px;
+    text-align:center;
+  }  
+  
   </style>  
   </head> 
   <body>
+  <div data-role="header" data-position="fixed" data-tap-toggle="false"> 
+      <div class="ui-grid-b">
+        <div class="ui-block-a">
+          Left part      
+        </div>
+        <div class="ui-block-b">
+          Middle part
+        </div>
+        <div class="ui-block-c">
+          Right part					
+        </div>   
+      </div>
+  </div>   
   <div  data-role="content" class="jqm-content"  id="contentDiv">
-    <ul data-role="listview">
+    <ul data-role="listview" data-filter="true">
       <li>
           <div id='ListItem'  data-role="collapsible">		
             <h3> 
               <p class="avatar"><img src="img/towelieavatar.png"/></p>
               <p class="listViewHeaderText"><strong>Towelie</strong></p>
-              <p class="listViewHeaderText">Don't forget to bring a towel.</p>          
+              <p class="listViewHeaderText">Don't forget to bring a towel.</p>      
+              <p class="ui-li-aside asideheader"><strong>29/09/2013 9:18</strong></p>
             </h3>
             <div>
               <ul>
@@ -50,6 +75,7 @@
                       <p class="avatarreply"><img src="img/cartmanavatar.png"></p>
                       <p class="listViewHeaderText"><strong>Cartman</strong></p>
                       <p class="listViewHeaderText">You're the worst character ever, Towelie</p>
+                      <p class="ui-li-aside asideheader"><strong>29/09/2013 9:20</strong></p>
                     </h2>                    
                 </li>
                 <li>
@@ -57,6 +83,7 @@
                       <p class="avatarreply"><img src="img/towelieavatar.png"></p>
                       <p class="listViewHeaderText"><strong>Towelie</strong></p>
                       <p class="listViewHeaderText">I know...</p>
+                      <p class="ui-li-aside asideheader"><strong>29/09/2013 9:22</strong></p>
                     </h2>                      
                 </li>
               </ul>
@@ -68,7 +95,8 @@
             <h3> 
               <p class="avatar"><img src="img/benderavatar.png"/></p>
               <p class="listViewHeaderText"><strong>Bender</strong></p>
-              <p class="listViewHeaderText">The chemical energy keeps my fuel charged.</p>          
+              <p class="listViewHeaderText">The chemical energy keeps my fuel charged.</p>  
+              <p class="ui-li-aside asideheader"><strong>29/09/2013 9:28</strong></p>              
             </h3>
             <div>
               <ul>
@@ -77,6 +105,7 @@
                       <p class="avatarreply"><img src="img/fryavatar.png"></p>
                       <p class="listViewHeaderText"><strong>Fry</strong></p>
                       <p class="listViewHeaderText">Then what are the cigars for?</p>
+                      <p class="ui-li-aside asideheader"><strong>29/09/2013 9:30</strong></p>              
                     </h2>
                 </li>
                 <li>
@@ -84,6 +113,7 @@
                       <p class="avatarreply"><img src="img/benderavatar.png"></p>
                       <p class="listViewHeaderText"><strong>Bender</strong></p>
                       <p class="listViewHeaderText">They make me look cool.</p>
+                      <p class="ui-li-aside asideheader"><strong>29/09/2013 10:30</strong></p>              
                     </h2>
                 </li>
               </ul>
