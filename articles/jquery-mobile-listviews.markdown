@@ -154,10 +154,6 @@ Then, you can insert the listview in the content part (Same thing, header in the
         </li>
       </ul>
 
-Here is the complete code:
-
-<jquery-mobile-listviews/secondLevel.html>
-
 To see the result: 
 > [Responses to Towelie and Bender messages](jquery-mobile-listviews/secondLevel.html "Towelie and Bender messages")
 
@@ -397,10 +393,10 @@ By example:
 After some adjustment, you end up with:
 > [Final result](jquery-mobile-listviews/finalResult.htm "Final result")
 
+Here is the complete code:
 
-The final complete code is:
+<jquery-mobile-listviews/finalResult.htm>
 
-<jquery-mobile-listviews/finalResult.htm> 
 
 
 ## Conclusion ##
