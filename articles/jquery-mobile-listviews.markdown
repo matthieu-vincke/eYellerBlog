@@ -1,6 +1,6 @@
 Title: Format jquery mobile listviews
 Author: Matthieu Vincke
-Date: 9/21/2013 2:30:47 PM 
+Date: 9/29/2013 5:54:33 PM 
 Categories: jquerymobile,css,javascript
 
 This first article will show how to customize the jquery mobile listviews.
@@ -237,6 +237,10 @@ For the replies, you can use exactly the same syntax.
 
 The result: **[Final Result without custom](jquery-mobile-listviews/finalWithoutCustom.html "Final Result without custom")**
 
+And the final code:
+
+<jquery-mobile-listviews/finalWithoutCustom.html>
+
 
 **Why we need to customize**
 
@@ -247,6 +251,7 @@ Actually, you don't need to if the current result is satisfying for you... But, 
 - Add a button for a contextual menu
 
 If you do want the same, you also need to customize jQuery mobile. 
+
 
 ##Customize it!
 
@@ -276,10 +281,6 @@ But, if you prefer to move the icon to right and to change it you can something 
     }  
 
 The result: **[With a new icon](jquery-mobile-listviews/CustomizeStep1a.html "Customize step1a")**
-
-The complete code is:
-
-<jquery-mobile-listviews/CustomizeStep1b.html>
 
 
 **Move the search bar**
@@ -326,11 +327,6 @@ You see the idea? With position fixed, we allow the bar to move and with top/lef
 See the result here:
 > [Move the search bar in the header](jquery-mobile-listviews/CustomizeStep2.html "Move the search bar in the header")
 
-And the complete code:
-
-<jquery-mobile-listviews/CustomizeStep2.html>
-
-
 **Toggle the search bar display**
 
 As you may have noticed, the search bar in the header hides the content of the header... it's logical! But, we can add a button in the header to display/hide the search bar and we can make it hidden by default. Let's see how we can do that!
@@ -364,39 +360,51 @@ See the result here:
 > [Toggle the search bar](jquery-mobile-listviews/CustomizeStep2.html "Toggle the search bar")
 
 
-The complete code is:
-
-<jquery-mobile-listviews/CustomizeStep3.html>
-
-
 **Add a button in yell and replies**
 
+We already know how to add a part on the top right corner with the class "ui-li-aside". All we need is to add some properties to this class to display a button a bit below. The following class does that:
 
-*Soon*
+    .insideMenu {
+	    float: right;
+	    margin-top: 21px;
+	    margin-right: 0px;
+	    width: 30px !important;
+	    height: 40px !important;
+	    z-index:1001;		
+    }  
 
+In the listview header, it gives:
 
-We already have the image from the first step of customization. All we need is to make the button "alive".
-
+    <p class="ui-li-aside insideMenu">
+		<button data-role="button"  id="show-content" data-iconpos="notext" data-icon="mymenu" onclick="alertTest()">
+		</button>	
+    </p>	
 
 
 See the result here:
 > [Button in the header](jquery-mobile-listviews/CustomizeStep4.html "Toggle the search bar")
 
 
-The complete code is:
-
-<jquery-mobile-listviews/CustomizeStep4.html>
-
-
 **Some adjustments**
 
+As you may have noticed it, the design is still not perfect, we need some adjustments. 
+By example:
+- The date of the replies is truncated
+- There is no icon for the contextual menu button
+- Etc...
 
-*Soon*
 
-After some adjustment, you can have something like::
+After some adjustment, you end up with:
 > [Final result](jquery-mobile-listviews/finalResult.htm "Final result")
 
 
-The complete code is:
+The final complete code is:
 
-<jquery-mobile-listviews/finalResult.htm>
+<jquery-mobile-listviews/finalResult.htm> 
+
+
+## Conclusion ##
+
+As you can see, we can do some great things with the listviews of jQuery mobile. But, you have to know that the performance of the listview is not very good... If you have loads of items in it, it may become slow when you scroll down or up, especially if you have a side menu.
+
+One of the option is to switch to a two levels collapsible instead of a listview with a collapsible on the second level. But, you will lose the search bar functionality as this option is available only for the listviews... I guess life is a choice and so is coding with jQuery mobile!

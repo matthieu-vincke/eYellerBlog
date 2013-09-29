@@ -36,17 +36,8 @@
 
   .insideMenu {
     float: right;
-    margin-top: 20px;
+    margin-top: 21px;
     margin-right: 0px;
-    width: 30px !important;
-    height: 40px !important;
-    z-index:1001;		
-  }  
-
-  .insideReplyMenu {
-    float: right;
-    margin-top: 10px;
-    margin-right: 00px;
     width: 30px !important;
     height: 40px !important;
     z-index:1001;		
@@ -73,8 +64,6 @@
     width: 50px;
     height: 15px;
     margin-left:-5px;
-    margin-right:-30px;
-    margin-top:-5px;
     margin-bottom:-20px;
     text-align:center;
   }
@@ -129,7 +118,7 @@
         <div class="ui-block-a" style="text-align:left"></div>
         <div class="ui-block-b" style="text-align:left;margin-top:8px;">eYeller jQuery mobile listview customization</div>
         <div class="ui-block-c" style="text-align:right">
-          <div  class="insideHeaderMenu"><button data-iconpos="notext" id="toggle_btn" onclick="toggle();" data-role="button" data-transition="none"  data-inline="true" data-theme="t"  data-icon="search">S</button></div>					
+          <div  class="insideHeaderMenu"><button data-iconpos="notext" id="toggle_btn" onclick="toggle();" data-role="button" data-transition="none"  data-inline="true"   data-icon="search">S</button></div>					
         </div>   
       </div>
   </div> 
@@ -143,23 +132,19 @@
               <p class="avatar"><img src="img/towelieavatar.png"/></p>
               <p style="white-space:normal;line-height:120%"style="width:75%"><strong>Towelie</strong></p>
               <p style="white-space:normal;line-height:120%"style="width: 75%">Don't forget to bring a towel.</p>
-              <p class="ui-li-aside asideheader"><strong>9:18</strong>AM
-                <p class="ui-li-aside insideMenu">
-                  <button data-role="button" data-theme="i" id="show-content" data-transition="none" data-iconpos="notext" data-icon="mymenu" onclick="alertTest()"></button> 						
-                </p>								
-              </p>				
+              <p class="ui-li-aside asideheader"><strong>9:18</strong>AM</p>	
+              <p class="ui-li-aside insideMenu">
+                <button data-role="button"  id="show-content" data-transition="none" data-iconpos="notext" data-icon="mymenu" onclick="alertTest()"></button> 						
+              </p>											
             </div>			
           </h3>
-          <ul style="margin-top:-10px;" >
-            <li style="margin-left:5px;" >
+          <ul style="margin-top:-10px;">
+            <li style="margin-left:5px;">
               <h3>	
                 <p class="avatarreply"><img src="img/cartmanavatar.png"/></p>
                 <p class ="textInCollapsible" ><strong>Cartman</strong></p>
                 <p class ="textInCollapsible" >You're the worst character ever, Towelie</p>
                 <p class="ui-li-aside asidereply"><strong>9:18</strong>AM</p>
-                <p class="ui-li-aside insideReplyMenu">
-                  <button data-role="button" data-theme="t"  id="show-content2" data-transition="none" data-iconpos="notext" data-icon="mymenu" onclick="alertTest()"></button> 						
-                </p>	
               </h3>	
             </li>
             <li style="margin-left:5px;">
@@ -168,10 +153,6 @@
                 <p class ="textInCollapsible" ><strong>Towelie</strong></p>
                 <p class ="textInCollapsible" >I know...</p>
                 <p class="ui-li-aside asidereply"><strong>9:18</strong>AM</p>
-                <p class="ui-li-aside insideReplyMenu">
-                  <button data-role="button" data-theme="t"  id="show-content2" data-transition="none" data-iconpos="notext" data-icon="mymenu" onclick="alertTest()"></button> 						
-                </p>									
-                </p>
               </h3>								
             </li>
           </ul>
@@ -184,10 +165,9 @@
               <p class="avatar"><img src="img/benderavatar.png"/></p>
               <p style="white-space:normal;line-height:120%;style=width:75%"><strong>Bender</strong></p>
               <p style="white-space:normal;line-height:120%;style=width:75%">The chemical energy keeps my fuel charged.</p>
-              <p class="ui-li-aside asideheader"><strong>9:18</strong>AM
-                <p class="ui-li-aside insideMenu">
-                  <button data-role="button" data-theme="i" id="show-content" data-transition="none" data-iconpos="notext"  data-icon="mymenu" onclick="alertTest()"></button> 													
-                </p>
+              <p class="ui-li-aside asideheader"><strong>9:18</strong>AM</p>
+              <p class="ui-li-aside insideMenu">
+                <button data-role="button" id="show-content" data-transition="none" data-iconpos="notext"  data-icon="mymenu" onclick="alertTest()"></button> 													
               </p>
             </div>
           </h3>				
@@ -198,11 +178,7 @@
                   <p class="avatarreply"><img src="img/fryavatar.png"/></p>
                   <p class="textInCollapsible"><strong>Fry</strong></p>
                   <p class="textInCollapsible">Then what are the cigars for?.</p>
-                  <p class="ui-li-aside asidereply"><strong>9:18</strong>AM</p>
-                  <p class="ui-li-aside insideReplyMenu">
-                    <button data-role="button" data-theme="t"  id="show-content4" data-transition="none" data-iconpos="notext" data-icon="mymenu"  onclick="alertTest()"></button> 						
-                  </p>	
-                  </p>				
+                  <p class="ui-li-aside asidereply"><strong>9:18</strong>AM</p>		
                 </div>
               </h3>	
             </li>                        
@@ -212,10 +188,6 @@
                 <p class="textInCollapsible"><strong>Bender</strong></p>
                 <p class="textInCollapsible">They make me look cool.</p>
                 <p class="ui-li-aside asidereply"><strong>9:18</strong>AM</p>
-                <p class="ui-li-aside insideReplyMenu">
-                  <button data-role="button" data-theme="t"  id="show-content5" data-transition="none" data-iconpos="notext" data-icon="mymenu" onclick="alertTest()"></button> 						
-                </p>									
-                </p>		
               </h3>								
             </li>
           </ul>
