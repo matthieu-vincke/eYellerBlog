@@ -3,8 +3,6 @@ Author: Matthieu Croquelois
 Date: 10/28/2013 20:37
 Categories: mongodb,replica,digitalOcean
 
-# MongoDB on Digital Ocean, installation and replica 
-
 ## Choose the droplet
 
 First step create a droplet, choose a **64bit** version of ubuntu, and a decent amount of memory.
