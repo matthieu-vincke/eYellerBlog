@@ -72,8 +72,9 @@ dl a:hover {
 #header .logo {
   position: absolute;
   top: 2px;
-  left: 10px;
+  left: 0px;
 }
+
 #header .tagline {
   float: right;
   display: inline;
@@ -86,6 +87,26 @@ dl a:hover {
   border-radius: 20px;
   margin-top: 19px;
 }
+
+#header .tagline A:link {color: #fff;;text-decoration: underline}
+#header .tagline A:visited {color: #fff;text-decoration: underline}
+#header .tagline A:active {color: #fff;;text-decoration: underline overline}
+#header .tagline A:hover {text-decoration: underline overline; color: #730054;}
+
+
+#header .iconStyle {
+  float: left;
+  display: inline;
+  color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 15px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  margin-top: 119px;
+}
+
 .article {
   position: relative;
   border: 1px solid #ddd;

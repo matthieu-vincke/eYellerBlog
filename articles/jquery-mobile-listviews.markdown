@@ -12,17 +12,18 @@ jQuery mobile listviews are great but you may find them limited. If it is the ca
 
 Before  starting, let me just clarify what I mean by customizing jQuery mobile. For me, customizing  means  modifying the CSS classes and but also the javascript code. Adding a CSS class to enhance the design of some jQuery mobile items is not a customization for me.
 
+<br/>
 **For the little story**
 
 In eYeller, we wanted to represent all the messages around the user on a single page and to be able to display the responses by a click on the message. We also needed a contextual menu to choose to answer to the yell / reyell / get the details => we needed a button inside the header.
 
 As we choose to use jQuery mobile since the beginning, we started to look at the possibilities given by the listviews/collapsibles but it appears that it was a bit limited and it needed some customization. We finally ended up with this result that is not too bad: 
-> [Final result after customization](jquery-mobile-listviews/finalResult.htm "Final Result")
+**[Final result after customization](jquery-mobile-listviews/finalResult.htm "Final Result")**
 
 
 Here is how we did it.
 
-
+<br/>
 **Note**
 
 Please note that I am not a webdesigner and not a CSS expert. I do CSS because I need to and I do it so it can do what I want but I may not be using the best ways to do it. 
@@ -48,7 +49,7 @@ About the replies... We need to display them after a click on the message. The "
 But, as you can see, there is no "extended" header for the collapsible: just a single line of text.
 
 I remind you that this is what we want to do: 
-> [Final result after customization](jquery-mobile-listviews/finalResult.htm "Final Result")
+**[Final result after customization](jquery-mobile-listviews/finalResult.htm "Final Result")**
 
 You can now see that it is not really possible to do what we want without some customization...
 
@@ -69,6 +70,8 @@ The article will show how to:
 
 Ready?
 
+<br/>
+
 ##Generic listviews
 **Create your first listview**
 
@@ -78,20 +81,20 @@ To help us, I introduce you Towelie and Bender (from SouthPark and Futurama for 
 
 Here is what they have to say: 
 
-> [Towelie and Bender messages](jquery-mobile-listviews/firstListView.html "Towelie and Bender messages")
+**[Towelie and Bender messages](jquery-mobile-listviews/firstListView.html "Towelie and Bender messages")**
 
 As you can see, it is quite simple and jQuery mobile allow us to do it easily. Just include jquery and jquery mobile js + jquery mobile css and create a listview and that's it!
 
 
 <jquery-mobile-listviews/firstListView.html>
 
-
+<br/>
 **Second level**
 
 The first level was easy isn't it? But what if someone want to reply to Towelie and Bender? Let say, by example "Cartman" and "Fry"? (I hope you know them? ;) )
 
 They would say something like that: 
-> [Responses to Towelie and Bender messages](jquery-mobile-listviews/secondLevel.html "Towelie and Bender messages")
+**[Responses to Towelie and Bender messages](jquery-mobile-listviews/secondLevel.html "Towelie and Bender messages")**
 
 What do you think? Is it neat enough for you?
 Here is how to do that.
@@ -155,10 +158,11 @@ Then, you can insert the listview in the content part (Same thing, header in the
       </ul>
 
 To see the result: 
-> [Responses to Towelie and Bender messages](jquery-mobile-listviews/secondLevel.html "Towelie and Bender messages")
+**[Responses to Towelie and Bender messages](jquery-mobile-listviews/secondLevel.html "Towelie and Bender messages")**
 
 If you already know jQuery mobile, you may wandered why we didn't use the collapsible-set instead. That's a good question and the answer is mostly because of the next section: the search bar that is available for the listview and not the collapsible-set unfortunately.... But, as we will see it later, we had to switch to collapsible-set anyway.
 
+<br/>
 **Add the search bar**
 
 You want to be able to search into the messages? In real time with no server request? jQuery mobile can help you to do that! Have a look at: **[list-filter](http://jquerymobile.com/demos/1.3.0/docs/widgets/listviews/#list-filter "list-filter")**
@@ -169,9 +173,9 @@ You get it, it is really simple! Just add "data-filter="true"" in the listview, 
     
 
 The result is: 
-> [Responses to Towelie and Bender messages with search feature](jquery-mobile-listviews/secondLevelWithSearch.html "Towelie and Bender messages and responses with search")
+**[Responses to Towelie and Bender messages with search feature](jquery-mobile-listviews/secondLevelWithSearch.html "Towelie and Bender messages and responses with search")**
 
-
+<br/>
 **Add an header**
 
 Adding a header is really easy. Just add a "data-role="header"" in a div on top of the "data-role="content"" and that's it!
@@ -197,9 +201,9 @@ By example:
 The option "data-tap-toggle" is something you want to remember if you want to avoid some strange behaviour with the forms making the whole page "sliding"... I let you have a look on jQuery mobile to discover this option.
 
 Let's see the result: 
-> [SecondLevel with Search and Header](jquery-mobile-listviews/secondLevelSearchHeader.html "Header and search")
+**[SecondLevel with Search and Header](jquery-mobile-listviews/secondLevelSearchHeader.html "Header and search")**
 
-
+<br/>
 **Add a text zone for the date**
 
 There is already a class in jQuery mobile to add some text on the top right corner. It is the CSS "ui-li-aside". 
@@ -237,7 +241,7 @@ And the final code:
 
 <jquery-mobile-listviews/finalWithoutCustom.html>
 
-
+<br/>
 **Why we need to customize**
 
 Actually, you don't need to if the current result is satisfying for you... But, we wanted for eYeller to:
@@ -248,7 +252,7 @@ Actually, you don't need to if the current result is satisfying for you... But, 
 
 If you do want the same, you also need to customize jQuery mobile. 
 
-
+<br/>
 ##Customize it!
 
 **Remove or move the icon**
@@ -278,7 +282,7 @@ But, if you prefer to move the icon to right and to change it you can something 
 
 The result: **[With a new icon](jquery-mobile-listviews/CustomizeStep1a.html "Customize step1a")**
 
-
+<br/>
 **Move the search bar**
 
 The search bar is a nice feature but it takes some space in the main content area. That's why we thought it would be nice to move it into the header.
@@ -321,8 +325,9 @@ Here is what we can do:
 You see the idea? With position fixed, we allow the bar to move and with top/left we set the position. "z-index" is to make sure that the bar is always on top. And finally, the background-image is just for fun! To put some nice background in order to not be differentiate from the header.
 
 See the result here:
-> [Move the search bar in the header](jquery-mobile-listviews/CustomizeStep2.html "Move the search bar in the header")
+**[Move the search bar in the header](jquery-mobile-listviews/CustomizeStep2.html "Move the search bar in the header")**
 
+<br/>
 **Toggle the search bar display**
 
 As you may have noticed, the search bar in the header hides the content of the header... it's logical! But, we can add a button in the header to display/hide the search bar and we can make it hidden by default. Let's see how we can do that!
@@ -353,8 +358,9 @@ Finally, if you want to hide it by default, you can add in a "pagebeforeshow" ca
     });		 
 
 See the result here:
-> [Toggle the search bar](jquery-mobile-listviews/CustomizeStep2.html "Toggle the search bar")
+**[Toggle the search bar](jquery-mobile-listviews/CustomizeStep2.html "Toggle the search bar")**
 
+<br/>
 
 **Add a button in yell and replies**
 
@@ -378,8 +384,9 @@ In the listview header, it gives:
 
 
 See the result here:
-> [Button in the header](jquery-mobile-listviews/CustomizeStep4.html "Toggle the search bar")
+**[Button in the header](jquery-mobile-listviews/CustomizeStep4.html "Toggle the search bar")**
 
+<br/>
 
 **Some adjustments**
 
@@ -391,13 +398,13 @@ By example:
 
 
 After some adjustment, you end up with:
-> [Final result](jquery-mobile-listviews/finalResult.htm "Final result")
-
+**[Final result](jquery-mobile-listviews/finalResult.htm "Final result")**
 Here is the complete code:
 
 <jquery-mobile-listviews/finalResult.htm>
 
 
+<br/><br/>
 
 ## Conclusion ##
 

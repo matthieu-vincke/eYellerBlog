@@ -1,14 +1,16 @@
 ### About this blog
 
-This is the blog of the ***eYeller*** team.
+This is the blog of the **[eYeller](http://www.eyeller.com)** team.
 
-We share in this blog some of the interesting things we discovered while writing ***eYeller***
+We share in this blog some of the interesting things we discovered while writing **[eYeller](http://www.eyeller.com)**
 
 You will find articles about:
 
 Javascript,Jquery,NodeJs, Mongodb,Phonegap,Cordova, Ubuntu (Security/Shell script etc.), GitHub, etc...
 
 Enjoy!
+
+**[www.eYeller.com](http://www.eyeller.com)**
 
 ----------
 
